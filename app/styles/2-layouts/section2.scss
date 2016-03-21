@@ -1,0 +1,66 @@
+$salmon: rgba(219,91,74,0.9);
+$salmon-highlighted: rgba(219,91,74,0.5);
+
+$orange: rgba(227,166,2,0.9);
+$orange-highlighted: rgba(227,166,2,0.5);
+
+$green: rgba(138,207,124,0.9);
+$green-highlighted: rgba(138,207,124,0.5);
+
+$blue: rgba(134,188,220,0.9);
+$blue-highlighted: rgba(134,188,220,0.5);
+
+#section2 { 
+	@include background('../images/bg/mama-raised-an-outlaw.jpg');
+	.img-wrapper {
+  		width: 100%;
+  		max-width: 500px;
+  		margin: 0 auto 0 auto;
+  		padding-bottom: 30px;
+  	}
+
+  	h3, .block {
+  		height: 84px;
+  		width: 100%;
+  		margin: 0px auto 20px auto;
+  		background: rgba(255,255,255,0.7);
+		line-height: 84px;
+  	}
+
+  	h3 {
+		color: #323232;
+		font-weight: bold;
+	}
+
+	h4 {
+		line-height: 3em;	
+	}
+
+  	.itunes {
+  		background-color: $salmon;
+  		&:hover {
+  			background-color:$salmon-highlighted;
+  		}
+  	}
+  	
+  	.google {
+  		background-color: $green; 
+  		&:hover {
+  			background-color:$green-highlighted;
+  		} 		
+  	}
+
+  	.spotify {
+  		background-color: $blue;
+  		&:hover {
+  			background-color:$blue-highlighted;
+  		}
+  	}
+
+  	.amazon {
+  		background-color: $orange;
+  		&:hover {
+  			background-color:$orange-highlighted;
+  		}
+  	}
+}

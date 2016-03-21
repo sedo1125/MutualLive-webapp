@@ -1,0 +1,19 @@
+#section1{
+	overflow: hidden;
+	background-color: black;
+	.mute {
+    
+    }
+
+	.section1aMobile {
+		@include background('../images/Moble-Home.jpg');
+
+		img {
+    		padding-top: 100px;
+	    }
+		h1 {
+			padding-bottom: 200px; 
+    	}
+	}
+
+}
