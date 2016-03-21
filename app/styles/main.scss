@@ -1,9 +1,11 @@
 $icon-font-path: '../fonts/';
+$fa-font-path: "/bower_components/font-awesome/fonts";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "bower_components/fullpage.js/jquery.fullPage.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -71,9 +73,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
+/*   .container {
     max-width: 730px;
-  }
+  } */
 
   /* Remove the padding we set earlier */
   .header,
@@ -94,6 +96,5 @@ body {
   }
 }
 
-@import "1-base/base-dir";
-@import "2-modules/modules-dir";
-@import "3-layouts/layouts-dir";
+@import "1-modules/modules-dir";
+@import "2-layouts/layouts-dir";

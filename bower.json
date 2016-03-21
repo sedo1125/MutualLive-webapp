@@ -5,7 +5,9 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "bourbon": "^4.2.6",
-    "fullpage.js": "^2.7.8"
+    "fullpage.js": "^2.7.8",
+    "normalize-css": "^4.0.0",
+    "font-awesome": "^4.5.0"
   },
   "overrides": {
     "bootstrap-sass": {
