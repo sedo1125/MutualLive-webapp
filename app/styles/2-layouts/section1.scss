@@ -8,8 +8,10 @@
 	.section1aMobile {
 		@include background('../images/Moble-Home.jpg');
 
-		img {
+		.pulse {
     		padding-top: 100px;
+    		margin-left: 20px;
+    		margin-right: 20px;
 	    }
 		h1 {
 			padding-bottom: 200px; 

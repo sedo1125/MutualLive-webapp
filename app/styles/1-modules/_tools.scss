@@ -4,3 +4,10 @@
         size: cover;
     }
 }
+
+@mixin news-box($height, $bg) {
+	height: $height;
+	background-color: $bg;
+	display: flex;
+	align-items: center;
+}
