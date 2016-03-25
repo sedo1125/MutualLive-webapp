@@ -1,21 +1,33 @@
 #section8a {
 	@include background('../images/bg/zachary-charles-lead-singer.png');
+ 	background-position: 65%; 
 }
 
 #section8b {
 	@include background('../images/bg/dan-drogosh-lead-guitar-gibson-custom.jpg');
+    background-position: 25%; 
 }
 
 #section8c {
 	@include background('../images/bg/joseph-maliszewski.jpg');
+    background-position: 75%; 
 }
 
 #section8d {
 	@include background('../images/bg/evan-mayo-drums.jpg');
+	background-position: 50%; 
 }
 
 .circle {
 	background: rgba(0,0,0,1);
 	border-radius: 50%;
 	box-shadow: 0px 0px 190px 108px rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 1200px) {
+	.circle {
+		background: rgba(0,0,0,0.3);
+		box-shadow: none;
+		border-radius: 0px;
+	}
 }

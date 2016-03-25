@@ -9,9 +9,9 @@ $(document).ready(function() {
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Album', 'News', 'Photos', 'Discography', 'Videos', 'Shows', 'About', 'Contact'],
         anchors: ['Home', 'Album', 'News', 'Photos', 'Discography', 'Videos', 'Shows', 'About', 'Contact'],
-        showActiveTooltip: false,
+        showActiveTooltip: true,
         slidesNavigation: false,
-        responsive: 1210,
+        responsive: 1200,
         scrollbar: true
 	});
 });

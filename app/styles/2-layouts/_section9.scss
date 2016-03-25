@@ -1,6 +1,8 @@
 #section9 {
 	@include background('../images/bg/show-smoke.jpg', 0.35, 1.0);
-
+	.row {
+		margin-top: 0;
+	}
 	.form-control {
 		margin-top: 20px;
 	}

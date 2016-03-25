@@ -1,31 +1,35 @@
 #section5 { 
-  	@include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg', 0.1, 0.5);  
-  	.album-container {
-  		height: 360px;
-  		position: relative;
-  		overflow: hidden;
-  		.song-list {
-  			position: absolute;
-  			top: -100%;
-  			padding-top: 50px;
-  			padding-left: 25px;
-  			color: $lightfont;
-  			font-family: 'Oswald';
-  			font-size: 16px;
-  			letter-spacing: 2px;
-  			text-transform: uppercase;
-  			font-weight: normal;
-  			line-height: 30px;
-  			background:rgba(0,0,0,0.7);
-  			height: 100%;
-  			width: 100%;
-			@include transition(all 0.25s ease-in-out);		
-  		}
+  @include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg', 0.1, 0.5);  
 
-		&:hover .song-list{
-			top: 0;
-  		}
+  @media screen and (min-width: 1200px) {
+    .album-container {
+      height: 360px;
+      width: 360px;
+      margin: 20px auto 20px auto;
+      position: relative;
+      overflow: hidden;
+      .song-list {
+        position: absolute;
+        top: -100%;
+        padding-left: 25px;
+        @include songlist;
+        height: 100%;
+        width: 100%;
+        @include transition(all 0.25s ease-in-out);		
+      }
+      &:hover .song-list {
+        top: 0;
+      }
+    }
+  }
 
-
-  	}
+  @media screen and (max-width: 1200px) {
+    .album-container {
+      .song-list {
+        @include songlist;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
 }
