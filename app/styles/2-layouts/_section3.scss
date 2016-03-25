@@ -5,7 +5,7 @@ $box-height: 400px;
 $box-color: rgba(0,0,0,0.9);
 $box-height-reduced: 397px;
 
-  	@include background('../images/bg/gibson.jpg');  
+  	@include background('../images/bg/gibson.jpg', 0.25, 0.8);  
 
 	h3, h4 {
 		margin:0;

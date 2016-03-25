@@ -46,7 +46,9 @@ a {
 	color: $lightfont;
 	&:hover {
 		text-decoration:none;
-		color: black;
+		h4 {
+			color: black;
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 #section5 { 
-  	@include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg');  
+  	@include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg', 0.1, 0.5);  
   	.album-container {
   		height: 360px;
   		position: relative;

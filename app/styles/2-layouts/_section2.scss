@@ -12,7 +12,7 @@ $blue-highlighted: rgba(134,188,220,0.5);
 
 #section2 { 
 
-	@include background('../images/bg/mama-raised-an-outlaw.jpg');  
+	@include background('../images/bg/mama-raised-an-outlaw.jpg', 0.3, 0.6);  
 	.img-wrapper {
   		width: 100%;
   		max-width: 500px;

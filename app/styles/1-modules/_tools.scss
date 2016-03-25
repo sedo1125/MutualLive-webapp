@@ -1,6 +1,6 @@
-@mixin background($imgpath) {
+@mixin background($imgpath, $grad:0, $grad2:0) {
     background: {
-        image: url($imgpath);
+        image: linear-gradient(rgba(0, 0, 0, $grad), rgba(0, 0, 0, $grad2)), url($imgpath);
         size: cover;
     }
 }

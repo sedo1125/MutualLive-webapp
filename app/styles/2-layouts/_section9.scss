@@ -1,0 +1,13 @@
+#section9 {
+	@include background('../images/bg/show-smoke.jpg', 0.35, 1.0);
+
+	.form-control {
+		margin-top: 20px;
+	}
+	.btn-block {
+	 	margin-top: 75px;
+	 	@extend h4;
+	 	padding-top: 15px;
+	 	padding-bottom: 15px
+	}
+}
