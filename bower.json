@@ -7,7 +7,7 @@
     "bourbon": "^4.2.6",
     "fullpage.js": "^2.7.8",
     "normalize-css": "^4.0.0",
-    "font-awesome": "^4.5.0"
+    "components-font-awesome": "^4.5.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -15,12 +15,6 @@
         "assets/stylesheets/_bootstrap.scss",
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
-      ]
-    },
-    "font-awesome": {
-      "main": [
-        "scss/font-awesome.scss",
-        "fonts/*"
       ]
     }
   },
