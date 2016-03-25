@@ -5,12 +5,19 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	text-align: center;
     letter-spacing: 0.1em;	
+   	color: $lightfont;
 }
 
+h2 {
+	position: absolute;
+	text-align: center;
+	top:25px;
+	left:0;
+	width: 100%;
+}
 
 h1, h2, h3 {
 	font-family: 'Covered By Your Grace', helvetica;
-	color: $lightfont;
 }
 
 h4, h5, h6 {
@@ -41,4 +48,10 @@ a {
 		text-decoration:none;
 		color: black;
 	}
+}
+
+p {
+	color: $lightfont;
+	margin-left: 20px;
+	margin-right: 20px;
 }

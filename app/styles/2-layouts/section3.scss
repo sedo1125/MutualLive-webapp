@@ -2,7 +2,7 @@
 
 $title-height: 80px;
 $box-height: 400px;
-$box-color: #191919;
+$box-color: rgba(0,0,0,0.9);
 $box-height-reduced: 397px;
 
   	@include background('../images/bg/gibson.jpg');  
@@ -15,7 +15,6 @@ $box-height-reduced: 397px;
 	.date-container {
 		height: $title-height;
 		background-color: $box-color;
-		color: $lightfont;
 		@include border-style(solid solid null solid);
 		@include border-width(3px);
 		@include border-color($lightfont);
@@ -28,12 +27,6 @@ $box-height-reduced: 397px;
 		@include border-style(solid solid solid solid);
 		@include border-width(3px);
 		@include border-color($lightfont);
-
-		p {
-			color: $lightfont;
-			margin-left: 20px;
-			margin-right: 20px;
-		}
 
 		h3 {
 			width: 100%;

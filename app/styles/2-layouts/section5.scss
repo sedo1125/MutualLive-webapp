@@ -1,0 +1,31 @@
+#section5 { 
+  	@include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg');  
+  	.album-container {
+  		height: 360px;
+  		position: relative;
+  		overflow: hidden;
+  		.song-list {
+  			position: absolute;
+  			top: -100%;
+  			padding-top: 50px;
+  			padding-left: 25px;
+  			color: $lightfont;
+  			font-family: 'Oswald';
+  			font-size: 16px;
+  			letter-spacing: 2px;
+  			text-transform: uppercase;
+  			font-weight: normal;
+  			line-height: 30px;
+  			background:rgba(0,0,0,0.7);
+  			height: 100%;
+  			width: 100%;
+			@include transition(all 0.25s ease-in-out);		
+  		}
+
+		&:hover .song-list{
+			top: 0;
+  		}
+
+
+  	}
+}
