@@ -30,3 +30,9 @@ footer {
     	}
 	}
 }
+
+@media screen and (max-width: 970px) {
+    footer {
+        visibility: hidden;
+    }   
+}

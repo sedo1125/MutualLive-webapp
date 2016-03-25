@@ -11,3 +11,15 @@
 	display: flex;
 	align-items: center;
 }
+
+@mixin songlist() {
+    padding-top: 50px;
+    color: $lightfont;
+    font-family: 'Oswald';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 30px;
+    background:rgba(0,0,0,0.7);	
+}

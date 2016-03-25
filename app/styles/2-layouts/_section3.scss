@@ -12,62 +12,64 @@ $box-height-reduced: 397px;
 		line-height: $title-height;			
 	}
 
-	.date-container {
-		height: $title-height;
-		background-color: $box-color;
-		@include border-style(solid solid null solid);
-		@include border-width(3px);
-		@include border-color($lightfont);
+	@media screen and (min-width: 1200px) {
 
-	}
-
-	.news-container {
-		position:relative;
-		@include news-box($box-height, $box-color);
-		@include border-style(solid solid solid solid);
-		@include border-width(3px);
-		@include border-color($lightfont);
-
-		h3 {
-			width: 100%;
-		}
-
-		.news-title {
-			@include transition(all 0.3s ease-in-out);
-			@include position(absolute, 0px 0px 0px 0px);
-
-			@include news-box($box-height-reduced, $box-color);
-			@include border-style(null null solid null);
+		.date-container {
+			height: $title-height;
+			background-color: $box-color;
+			@include border-style(solid solid null solid);
 			@include border-width(3px);
 			@include border-color($lightfont);
 
-			&:hover {
-				opacity: 0;
-  			}	
 		}
-  	}
+
+		.news-container {
+			position:relative;
+			@include news-box($box-height, $box-color);
+			@include border-style(solid solid solid solid);
+			@include border-width(3px);
+			@include border-color($lightfont);
+
+			h3 {
+				width: 100%;
+			}
+
+			.news-title {
+				@include transition(all 0.3s ease-in-out);
+				@include position(absolute, 0px 0px 0px 0px);
+
+				@include news-box($box-height-reduced, $box-color);
+				@include border-style(null null solid null);
+				@include border-width(3px);
+				@include border-color($lightfont);
+
+				&:hover {
+					opacity: 0;
+	  			}	
+			}
+	  	}
 
 
-  	.left-parent {
-		@include border-top-radius(20px);
- 		@include border-right-radius(0);
-  	}
+	  	.left-parent {
+			@include border-top-radius(20px);
+	 		@include border-right-radius(0);
+	  	}
 
-  	.left-child {
-		@include border-bottom-radius(20px);
- 		@include border-right-radius(0);
-  	}
+	  	.left-child {
+			@include border-bottom-radius(20px);
+	 		@include border-right-radius(0);
+	  	}
 
-  	.right-parent {
-		@include border-top-radius(20px);
- 		@include border-left-radius(0);
-  	}
+	  	.right-parent {
+			@include border-top-radius(20px);
+	 		@include border-left-radius(0);
+	  	}
 
-  	.right-child {
-		@include border-bottom-radius(20px);
- 		@include border-left-radius(0);
-  	}
-
+	  	.right-child {
+			@include border-bottom-radius(20px);
+	 		@include border-left-radius(0);
+	  	}
+	}
 
 	@media screen and (max-width: 1200px) {
 		.left-parent, .left-child, .right-parent, .right-child {
@@ -75,8 +77,32 @@ $box-height-reduced: 397px;
 			@include border-bottom-radius(0px);
 		}
 
+		h3 {
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 35px;
+			margin-bottom: 25px;
+		}
+
+		h4 {
+			text-decoration: underline;
+		}
+
+		.date-container {
+			height: $title-height;
+			background-color: $box-color;
+		}
+
 		.news-container {
 			margin-bottom: 30px;
+			background: $box-color;
+
+			.news-title {
+				@include news-box(auto, $box-color);
+				@include border-width(3px);
+				@include border-color($lightfont);
+			}
 		}
+
 	}
 }

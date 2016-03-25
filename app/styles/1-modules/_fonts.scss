@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
 	position: absolute;
 	text-align: center;
-	top:25px;
+	top:5px;
 	left:0;
 	width: 100%;
 }
@@ -57,4 +57,7 @@ p {
 	color: $lightfont;
 	margin-left: 20px;
 	margin-right: 20px;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 20px;
 }
