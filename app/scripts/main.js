@@ -14,4 +14,14 @@ $(document).ready(function() {
         responsive: 1200,
         scrollbar: true
 	});
+
+        $(".navbar-nav li a").click(function(event) {
+          $(".navbar-collapse").collapse('hide');
+        });
+
+        $('#myVideo').click( function (){
+            $(this).prop('muted', !$(this).prop('muted'));
+            $(".mute").toggle();
+        });
+
 });

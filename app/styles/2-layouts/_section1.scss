@@ -1,21 +1,54 @@
-#section1{
-	overflow: hidden;
-	background-color: black;
-	.mute {
-    
-    }
-
-	.section1aMobile {
-		@include background('../images/Moble-Home.jpg');
-
-		.pulse {
-    		padding-top: 100px;
-    		margin-left: 20px;
-    		margin-right: 20px;
+@media screen and (min-width: 768px) {
+	#section1{
+		overflow: hidden;
+		background-color: black;
+		.mute {
+	        float:left;
+	   		position: fixed;
+	   		margin: 20px;
 	    }
+
+		#myVideo {  
+		  width: 100% !important;
+		  height: auto !important;
+		}
+
+		.fp-tableCell {
+	    	vertical-align: top;
+	    }
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section1aMobile {
+		@include background('../images/mutual-live-band-members.jpg');
+		height: 300px;	
+		box-shadow: inset 0px 0px 60px 35px rgba(0,0,0,1);
+		
+		.logo-mobile {
+			position: relative;
+			top: -80px;
+			width: 75%;
+			margin-left:auto;
+			margin-right: auto;
+		}
+
+		.block {
+			position: relative;
+			bottom: -225px;
+			width: 75%;
+			padding: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			@include border-style(solid solid solid solid);
+			@include border-width(1px);
+			@include border-color(rgba(255, 255, 255, 0.15));
+			h4 {
+				font-family: "Covered by Your Grace";
+			}
+		}
 		h1 {
 			padding-bottom: 200px; 
-    	}
+		}
 	}
-
 }
