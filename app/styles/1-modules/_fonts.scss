@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
    	color: $lightfont;
 }
 
+h3 {
+	text-transform: none;
+}
+
 h2 {
 	position: absolute;
 	text-align: center;
