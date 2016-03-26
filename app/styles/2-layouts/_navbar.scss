@@ -26,3 +26,62 @@
     font-weight: 300;
     letter-spacing: 0.2em;
 }
+
+
+.navbar {
+    background:rgba(34,34,34,0.25);
+}
+.icon-bar {
+    background: white;
+}
+
+.navbar-toggle {
+    border: 1px solid rgba(255,255,255,.15);
+}
+
+.navbar-nav a {
+    color: rgb(255,255,255);
+    text-align: right;
+    font-family: "Oswald";
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+
+.navbar-nav a:hover {
+    color: black;
+}
+
+.navbar {
+    .social-container {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        .fa {
+            line-height: 47px;
+            font-size: 25px;
+            margin-left: 5px;
+            width: 50px;
+            height: 50px;
+
+            @include border-style(solid solid solid solid);
+            @include border-width(3px);
+            @include border-color($lightfont);
+            @include border-top-radius(50%);
+            @include border-bottom-radius(50%);         
+            text-align: center;
+            &:hover {
+                color: $lightfont;
+            }
+        }
+    }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 500px;
+}
+@media screen and (min-width: 1200px) {
+    .navbar {
+        visibility: hidden;
+    }   
+}
