@@ -6,6 +6,18 @@
     border-color: transparent transparent transparent rgba(252, 251, 227, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+	.fp-section {
+		height: 730px !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.fp-section {
+		height: auto !important;
+	}
+}
+
 
 @import "section1";
 @import "section2";
