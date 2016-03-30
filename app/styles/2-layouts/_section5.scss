@@ -1,5 +1,5 @@
-#section5 { 
-  @include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg', 0.1, 0.5);  
+#section5 {
+  @include background('../images/bg/dan-drogosh-white-gibson-les-paul.jpg', 0.1, 0.5);
 
   @media screen and (min-width: 1200px) {
     .album-container {
@@ -15,7 +15,7 @@
         @include songlist;
         height: 100%;
         width: 100%;
-        @include transition(all 0.25s ease-in-out);		
+        @include transition(all 0.25s ease-in-out);
       }
       &:hover .song-list {
         top: 0;
@@ -24,6 +24,9 @@
   }
 
   @media screen and (max-width: 1200px) {
+    h2 {
+      font-size: 45px
+    }
     .album-container {
       .song-list {
         @include songlist;
