@@ -12,7 +12,8 @@ $(document).ready(function() {
         showActiveTooltip: true,
         slidesNavigation: false,
         responsive: 1200,
-        scrollbar: true
+        scrollbar: true,
+				touchSensitivity: 15
 	});
 
         $('.navbar-nav li a').click(function() {

@@ -10,9 +10,9 @@ $green-highlighted: rgba(138,207,124,0.5);
 $blue: rgba(134,188,220,0.9);
 $blue-highlighted: rgba(134,188,220,0.5);
 
-#section2 { 
+#section2 {
 
-	@include background('../images/bg/mama-raised-an-outlaw.jpg', 0.3, 0.6);  
+	@include background('../images/bg/mama-raised-an-outlaw.jpg', 0.3, 0.6);
 	.img-wrapper {
   		width: 100%;
   		max-width: 500px;
@@ -34,9 +34,9 @@ $blue-highlighted: rgba(134,188,220,0.5);
     }
 
     h4 {
-		  line-height: 3em;	
+		  line-height: 3em;
     }
-    
+
     .block {
       @include transition(all 0.4s ease-in-out);
     }
@@ -47,12 +47,12 @@ $blue-highlighted: rgba(134,188,220,0.5);
   			background-color:$salmon-highlighted;
   		}
   	}
-  	
+
   	.google {
-  		background-color: $green; 
+  		background-color: $green;
   		&:hover {
   			background-color:$green-highlighted;
-  		} 		
+  		}
   	}
 
   	.spotify {
@@ -76,5 +76,8 @@ $blue-highlighted: rgba(134,188,220,0.5);
     .row {
       margin-top: 150px;
     }
+		h2 {
+			font-size: 45px;
+		}
   }
 }

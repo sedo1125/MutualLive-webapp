@@ -8,7 +8,7 @@
 	   		margin: 20px;
 	    }
 
-		#myVideo {  
+		#myVideo {
 		  width: 100% !important;
 		  height: auto !important;
 		}
@@ -22,9 +22,10 @@
 @media screen and (max-width: 768px) {
 	.section1aMobile {
 		@include background('../images/mutual-live-band-members.jpg');
-		height: 300px;	
+		background-position: 40%;
+		height: 300px;
 		box-shadow: inset 0px 0px 60px 35px rgba(0,0,0,1);
-		
+
 		.logo-mobile {
 			position: relative;
 			top: -80px;
@@ -36,7 +37,7 @@
 		.block {
 			position: relative;
 			bottom: -225px;
-			width: 75%;
+			width: 85%;
 			padding: 5px;
 			margin-left: auto;
 			margin-right: auto;
@@ -45,10 +46,11 @@
 			@include border-color(rgba(255, 255, 255, 0.15));
 			h4 {
 				font-family: "Covered by Your Grace";
+				font-size: 18px;
 			}
 		}
 		h1 {
-			padding-bottom: 200px; 
+			padding-bottom: 200px;
 		}
 	}
 }

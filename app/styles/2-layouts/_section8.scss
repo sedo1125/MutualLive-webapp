@@ -1,21 +1,25 @@
+.section fp-section fp-completely {
+	height: auto;
+}
+
 #section8a {
 	@include background('../images/bg/zachary-charles-lead-singer.png');
- 	background-position: 65%; 
+ 	background-position: 65%;
 }
 
 #section8b {
 	@include background('../images/bg/dan-drogosh-lead-guitar-gibson-custom.jpg');
-    background-position: 25%; 
+    background-position: 25%;
 }
 
 #section8c {
 	@include background('../images/bg/joseph-maliszewski.jpg');
-    background-position: 75%; 
+    background-position: 75%;
 }
 
 #section8d {
 	@include background('../images/bg/evan-mayo-drums.jpg');
-	background-position: 50%; 
+	background-position: 50%;
 }
 
 .circle {
